@@ -1,0 +1,65 @@
+@media (min-width: 980px) {
+    main{
+        padding-top: 40px;
+        .section-home{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 48% 48%;
+            gap: 15px;
+            .first-section-main{
+                padding-top: 65px;
+                .first-section-img{
+                    .back-img{
+                        width: 260px;
+                    }
+                    .front-img{
+                        width: 240px;
+                    top: calc(20% - 8vh);
+                    }
+                }
+            }
+            .second-section-container{
+                .second-section-cards{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                overflow-x: unset;
+                }
+            }
+            .third-section-container{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+                padding-top: 6px;
+                .third-section-adicionals{
+                    margin-top: 20px;
+                    height: 100%;
+                    figure{
+                        padding-top: 25px;
+                        img{
+                        width: 85px;
+                        height: 80px;
+                    }
+                    }
+
+                }
+            }
+            .four-section-container{
+                position: relative;
+                .four-section-certificates{
+                    height: 100%;
+                    .arrow-right{
+                        right: -15px;
+                        background-image: url('../assets/right-arrow.png');
+                        @include arrows;
+                    }
+                    .arrow-left{
+                        left: -15px;
+                        background-image: url('../assets/left-arrow.png');
+                        @include arrows;
+                    }
+                }  
+            }
+
+        }  
+    }
+
+}
